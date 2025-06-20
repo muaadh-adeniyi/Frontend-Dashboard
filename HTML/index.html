@@ -177,43 +177,5 @@
         </div>
     </div>
 
-    <script>
-        // Add some interactive functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add hover effects to project cards
-            const projectCards = document.querySelectorAll('.project-card');
-            projectCards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-4px) scale(1.02)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-            });
-
-            // Add click functionality to action icons
-            const actionIcons = document.querySelectorAll('.action-icon');
-            actionIcons.forEach(icon => {
-                icon.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    this.style.transform = 'scale(0.9)';
-                    setTimeout(() => {
-                        this.style.transform = 'scale(1.1)';
-                    }, 100);
-                });
-            });
-
-            // Add search functionality
-            const searchInput = document.querySelector('.search-input');
-            searchInput.addEventListener('focus', function() {
-                this.parentElement.style.transform = 'scale(1.02)';
-            });
-            
-            searchInput.addEventListener('blur', function() {
-                this.parentElement.style.transform = 'scale(1)';
-            });
-        });
-    </script>
 </body>
 </html>
