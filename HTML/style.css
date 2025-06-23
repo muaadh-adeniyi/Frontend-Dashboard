@@ -22,7 +22,13 @@
             overflow-y: auto;
         }
 
+        #sidebar-title-image{
+            width: 50px;
+           filter: brightness(0) invert(1);
+        }
+
         .sidebar-header {
+            display: flex;
             padding: 24px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
@@ -36,7 +42,7 @@
         }
 
         .sidebar-title::before {
-            content: "⊞";
+            /* content: "⊞"; */
             margin-right: 12px;
             font-size: 20px;
         }
@@ -69,6 +75,14 @@
             width: 20px;
         }
 
+        .nav-icon {
+         width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        vertical-align: middle;
+        filter: brightness(0) invert(1);
+        }
+/* 
         .nav-item:nth-child(1)::before { content: "🏠"; }
         .nav-item:nth-child(2)::before { content: "👤"; }
         .nav-item:nth-child(3)::before { content: "💬"; }
@@ -77,7 +91,7 @@
         .nav-item:nth-child(6)::before { content: "👥"; }
         .nav-item:nth-child(7)::before { content: "⚙️"; }
         .nav-item:nth-child(8)::before { content: "❓"; }
-        .nav-item:nth-child(9)::before { content: "🔒"; }
+        .nav-item:nth-child(9)::before { content: "🔒"; } */
 
         .main-content {
             margin-left: 280px;
@@ -97,7 +111,7 @@
 
         .search-bar {
             flex: 1;
-            max-width: 400px;
+            max-width: 600px;
             margin: 0 32px;
             position: relative;
         }
@@ -106,7 +120,7 @@
             width: 100%;
             padding: 12px 16px 12px 40px;
             border: 1px solid #d1d5db;
-            border-radius: 8px;
+            border-radius: 20px;
             font-size: 14px;
             background: #f9fafb;
         }
@@ -119,8 +133,8 @@
             position: absolute;
             left: 12px;
             top: 50%;
-            transform: translateY(-50%);
-            color: #9ca3af;
+            /* transform: translateY(-50%); */
+            /* color: #9ca3af; */
             font-size: 16px;
         }
 
@@ -134,12 +148,13 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background: #f3f4f6;
+            /* background: #f3f4f6; */
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            transition: background 0.2s ease;
+            /* transition: background 0.2s ease; */
+             /* filter: brightness(0) invert(1); */
         }
 
         .notification-icon:hover {
@@ -222,7 +237,7 @@
 
         .btn {
             padding: 10px 20px;
-            border-radius: 8px;
+            border-radius: 20px;
             font-weight: 600;
             font-size: 14px;
             border: none;
@@ -241,7 +256,7 @@
         }
 
         .btn-secondary {
-            background: #059669;
+            background:  #2563eb;
             color: white;
         }
 
@@ -251,7 +266,7 @@
         }
 
         .btn-tertiary {
-            background: #0891b2;
+            background:  #2563eb;
             color: white;
         }
 
@@ -340,8 +355,8 @@
         }
 
         .action-icon {
-            width: 32px;
-            height: 32px;
+            width: 20px;
+            height: 20px;
             border-radius: 6px;
             background: #f3f4f6;
             display: flex;
@@ -434,10 +449,23 @@
             font-size: 14px;
         }
 
+        .trending-avatar.red {
+        background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+        .trending-avatar.yellow {
+        background: linear-gradient(135deg, #fbbf24, #f59e0b);
+        }
+        .trending-avatar.blue {
+        background: linear-gradient(135deg, #9ca3af, #6b7280);
+        }
+        .trending-avatar.pink {
+        background: linear-gradient(135deg, #ec4899, #db2777);
+        }
+/* 
         .trending-avatar:nth-child(1) { background: linear-gradient(135deg, #ef4444, #dc2626); }
         .trending-item:nth-child(2) .trending-avatar { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
         .trending-item:nth-child(3) .trending-avatar { background: linear-gradient(135deg, #3b82f6, #2563eb); }
-        .trending-item:nth-child(4) .trending-avatar { background: linear-gradient(135deg, #ec4899, #db2777); }
+        .trending-item:nth-child(4) .trending-avatar { background: linear-gradient(135deg, #ec4899, #db2777); } */
 
         .trending-info h6 {
             font-size: 14px;
